@@ -134,3 +134,15 @@ Deux points à ne pas oublier :
   `ManagementLoto`. La dépendance `three` (et `@types/three`) n'existe que pour ce fichier.
 - **Aucun test** n'est écrit, bien que Vitest soit configuré.
 - Le champ `viewType` créé en base (`outPutNumber`) n'est lu nulle part.
+
+---
+
+## Licence
+
+[PolyForm Noncommercial 1.0.0](LICENSE.md) — usage, modification et redistribution libres
+**pour tout usage non commercial**. Une association qui s'en sert pour animer ses soirées
+est dans son droit ; la revendre, l'exploiter comme service payant ou l'intégrer à une offre
+commerciale demande une autorisation écrite.
+
+GitHub ne reconnaît pas cette licence dans son détecteur automatique : elle n'apparaîtra pas
+dans le bandeau du dépôt, seul le fichier `LICENSE.md` fait foi.
