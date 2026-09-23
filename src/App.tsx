@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import {Box} from "@mui/material";
-import Router from "./Router";
 import {BrowserRouter} from "react-router-dom";
 import {BehaviorSubject} from "rxjs";
+
+import Router from "./Router";
 
 export const partyObserver: BehaviorSubject<any> = new BehaviorSubject(false);
 function App() {

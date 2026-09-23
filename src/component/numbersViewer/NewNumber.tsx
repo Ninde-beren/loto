@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
 import {Paper, Typography} from "@mui/material";
+import React, {FC} from 'react';
 
 const NewNumber:FC<{number: any}> = ({number}) => {
 

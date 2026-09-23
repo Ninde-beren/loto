@@ -1,14 +1,16 @@
-import React, {FC, useEffect, useState, useTransition} from 'react';
 import {Button, Divider, Grid, Stack, Tooltip} from "@mui/material";
-import {Party} from "../_types/Party";
-import GetParty from "../request/GetParty";
-import {partyObserver} from "../App";
-import {db} from "../db";
-import Get from "../request/Get";
-import Update from "../request/Update";
-import AddParty from "../forms/AddParty";
+import React, {FC, useEffect, useState, useTransition} from 'react';
+
 import {LotoNumbers} from "../_types/LotoNumbers";
+import {Party} from "../_types/Party";
+import {partyObserver} from "../App";
 import LotoNumber from "../component/LotoNumber";
+import {env} from "../config/env.config";
+import {db} from "../db";
+import AddParty from "../forms/AddParty";
+import Get from "../request/Get";
+import GetParty from "../request/GetParty";
+import Update from "../request/Update";
 
 const ManagementLoto: FC = () => {
     const [party, setParty] = useState<Party | false>();
@@ -66,7 +68,7 @@ const ManagementLoto: FC = () => {
     }
 
     // enlever les pub si don --> IP + adresse mail + code
-    const newWindow = () => window.open(process.env.REACT_APP_BASE_URL + "/numbers");
+    const newWindow = () => window.open(env.baseUrl + "/numbers");
     console.log('observable managementLoto', party)
 
     return (

@@ -1,7 +1,8 @@
 import Dexie, {Table} from 'dexie';
-import {Party} from "./_types/Party";
 
 import {Params} from "./_types/Params";
+import {Party} from "./_types/Party";
+
 export class MyAppDatabase extends Dexie {
     // 'friends' is added by dexie when declaring the stores()
     // We just tell the typing system this is the case

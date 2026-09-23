@@ -1,5 +1,6 @@
 import React, {Suspense} from "react";
 import {useRoutes,} from "react-router-dom";
+
 import ManagementLoto from "./page/ManagementLoto";
 import NumbersViewer from "./page/NumbersViewer";
 

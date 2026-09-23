@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
 import {Grid, Paper, Tooltip, Typography} from "@mui/material";
+import React, {FC} from 'react';
 
 const LotoNumber: FC<{ number: any, check: boolean, management?: boolean, addNumber?: any, isLastNumber?: boolean }>
     = ({number, check, management, addNumber, isLastNumber}) => {

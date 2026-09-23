@@ -1,6 +1,3 @@
-import React, {useState} from 'react';
-import Add from "../request/Add";
-import Update from "../request/Update";
 import {
     Box,
     Button,
@@ -14,9 +11,13 @@ import {
     TextField,
     Typography
 } from "@mui/material";
-import GetParty from "../request/GetParty";
+import React, {useState} from 'react';
+
 import {Party} from "../_types/Party";
 import {partyObserver} from "../App";
+import Add from "../request/Add";
+import GetParty from "../request/GetParty";
+import Update from "../request/Update";
 
 const AddParty = () => {
     const [title, setTitle] = useState("");

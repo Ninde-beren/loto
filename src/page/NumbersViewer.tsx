@@ -1,7 +1,8 @@
-import React, {FC, useEffect, useState} from 'react';
 import {Box, Grid, Stack, Typography} from "@mui/material";
-import {Party} from "../_types/Party";
+import React, {FC, useEffect, useState} from 'react';
+
 import {LotoNumbers} from "../_types/LotoNumbers";
+import {Party} from "../_types/Party";
 import LotoNumber from "../component/LotoNumber";
 import NewNumber from "../component/numbersViewer/NewNumber";
 
